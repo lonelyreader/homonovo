@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Progress</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        h1 {
+            color: #333;
+        }
+        .contribution-charts {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            width: 80%;
+            max-width: 1000px;
+            margin-top: 20px;
+        }
+        .contribution-chart {
+            width: 100%;
+            border: 1px solid #ddd;
+            border-radius: 8px;
+            padding: 10px;
+            margin: 10px 0;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+        iframe {
+            width: 100%;
+            height: 200px;
+            border: none;
+            overflow: hidden;
+        }
+    </style>
+</head>
+<body>
+    <h1>百日磨一剑社群活动进度</h1>
+    <p>在此页面上可以查看每位参与者的 GitHub 贡献热点图，了解大家的学习进度。</p>
+
+    <div class="contribution-charts">
+        <!-- 参与者1的热点图 -->
+        <div class="contribution-chart">
+            <h3>船长</h3>
+            <iframe src="https://github.com/users/lonelyreader/contributions"></iframe>
+        </div>
+
+        <!-- 参与者2的热点图 -->
+        <div class="contribution-chart">
+            <h3>参与者2 (username2)</h3>
+            <iframe src="https://github.com/users/username2/contributions"></iframe>
+        </div>
+
+        <!-- 参与者3的热点图 -->
+        <div class="contribution-chart">
+            <h3>参与者3 (username3)</h3>
+            <iframe src="https://github.com/users/username3/contributions"></iframe>
+        </div>
+
+        <!-- 可以按需继续添加其他参与者 -->
+    </div>
+</body>
+</html>
